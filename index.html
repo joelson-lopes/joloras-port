@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/jolorasdev.jpeg" type="image/x-icon">
+    <meta name="description" content="Portfólio de Joelson Lopes">
+    <meta name="keywords" content="portfólio, Joelson Lopes, web design, desenvolvimento">
+    <meta name="author" content="Joelson Lopes">
+    <title>JOLORAS PORTFÓLIO</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .nav {
+            background-color: rgba(0, 0, 0, 0.7); 
+            display: flex;
+            justify-content: center;
+            padding: 14px 0;
+        }
+        .nav a {
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            flex-grow: 1;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .nav a:hover {
+            background-color: #555;
+            color: #fff;
+            transform: scale(1.1);
+            
+        }
+        main {
+            padding: 20px;
+            flex: 1;
+            background: url('images/jolorasdev.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            gap: 40px; 
+            align-items: center;
+            width: 100%;
+        }
+        .card {
+            background-color: rgba(255, 255, 255, 0.8); 
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 80%; 
+            max-width: 600px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            color: #333; 
+            margin: 0 20px; 
+        }
+        .card1 {
+            background-color: rgba(255, 255, 255, 0.8); 
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 80%; 
+            max-width: 600px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            color: #333; 
+            margin: 0 20px; 
+        }
+        .card1:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            width: 100%;
+            height: 300px; ;
+            object-fit: cover;
+        }
+        .card1 img {
+            width: 100%;
+            height: 300px; ;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 20px;
+            text-align: center;
+        }
+        .card-content h2 {
+            font-size: 1.8em; 
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .card-content p {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .card-content a {
+            display: inline-block;
+            padding: 12px 25px; 
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .card-content a:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+        .footer {
+            background-color: rgba(0, 0, 0, 0.7); 
+            padding: 20px;
+            text-align: center;
+            color: white;
+            margin-top: auto;
+        }
+        .footer .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 40px; 
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s, transform 0.3s;
+            border-radius: 50%;
+            overflow: hidden;
+
+        }
+        .footer a:hover {
+            color: #ddd;
+            transform: scale(1.1);
+        }
+        .footer a img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            transition: transform 0.3s;
+        }
+        .footer a:hover img {
+            transform: scale(1.2);
+        }
+        details{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 200;
+        cursor: pointer;
+        }
+        details:hover{
+            color: #d4430a;
+            cursor: pointer;
+        }
+        strong:hover{
+            color: #d4430a;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="biography.html">Biography</a>
+            <a href="certifications.html">Certifications</a>
+            <a href="goals.html">Goals</a>
+        </nav>
+    </header>
+    <main>
+        <div class="card-container">
+            <div class="card1">
+                <img src="images/profile.JPG" alt="Sobre Mim">
+                <div class="card-content">
+                    <h2 style="color: #45a049;">Sobre Mim</h2> <hr>
+                    <dd>
+                        <p>Sou <strong >Joelson De Jesus!</strong> <br>  Front-End Developer, estudante do Curso de Informática e Gestão.
+                        <br>Apreciador de tecnologia! <br> Um desenvolvedor web apaixonado por criar soluções inovadoras e eficientes.
+                    </dd>
+                    <h3>O que faz um desenvolvedor front end?</h3>
+                    <details>
+                        <p id="descrpition">
+                            Um desenvolvedor front end é responsável pela criação e implementação da interface de um site ou aplicativo, com foco na experiência do usuário. Suas principais atividades incluem a escrita de código HTML, CSS e JavaScript para criar a estrutura, o layout e as interações da interface. O desenvolvedor front end trabalha em estreita colaboração com os designers para transformar os layouts e as imagens em elementos interativos e funcionais.
+                            Além disso, um desenvolvedor front end também é responsável por otimizar o desempenho do site, garantir a compatibilidade com diferentes navegadores e dispositivos, e implementar práticas de design responsivo para tornar a interface adaptável a diferentes tamanhos de tela. Eles também podem estar envolvidos no teste e depuração do código, garantindo que o site ou aplicativo funcione corretamente.
+                        </p>
+                    </details>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/logodev.png" alt="Projetos">
+                <div class="card-content">
+                    <h2 style="color: #45a049;">Projetos</h2>
+                    <p>Aqui estão alguns dos projetos em que trabalhei.</p>
+                    <a href="projects.html">Veja Projetos</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/write.jpg" alt="Habilidades">
+                <div class="card-content">
+                    <h2 style="color: #45a049;">Habilidades</h2>
+                    <p>Minhas principais habilidades incluem HTML, CSS, JavaScript, e mais.</p>
+                    <a href="skills.html">Minhas Habilidades</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/contacto.jpg" alt="Contato">
+                <div class="card-content">
+                    <h2 style="color:#45a049;">Contato</h2> 
+                    <p>Entre em contato comigo através do WhatsApp ou E-mail.</p>
+                    <a href="https://wa.link/gvh02t">Fale Comigo no WhatsApp</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="social-links">
+            <a href="hhtps://google.com/mail.to/ijoelson886@gmail.com" target="_blank" class="text-white">
+                <img src="images/gmaillogo.png" alt="Gmail">
+            </a>
+            <!--<a href="https://wa.link/gvh02t" target="_blank">
+                <img src="images/whatsapplogo.png" alt="WhatsApp">
+            </a>-->
+            <a href="https://www.instagram.com/_yfckwn_/" target="_blank">
+                <img src="images/logo-instagram.jpg" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/joelson-de-jesus-040a70309/" target="_blank">
+                <img src="images/R.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/joelson-lopes" target="_blank">
+                <img src="images/logo-github.jpg" alt="GitHub">
+            </a>
+            <a href="https://x.com/_yfckwn_" target="_blank">
+                <img src="images/logo-twitter.jpg" alt="Twitter">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61553688145403&locale=pt_BR" target="_blank">
+                <img src="images/facebooklogo.png" alt="Facebook">
+            </a>
+            <!--<a href="https://x.com/_yfckwn_" target="_blank">
+                <img src="images/telegramlogo.png" alt="Telegram">
+            </a>-->
+            </a>
+            <a href="https://discord.com/channels/@joelsondejesus" target="_blank">
+                <img src="images/discordlogo.png" alt="Discord">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
