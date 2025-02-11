@@ -12,17 +12,70 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
+            margin: 20px;
+            line-height: 1.6;
+            background: #f4f4f4;
             padding: 0;
-            background-color: #f5f5f5;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
+            margin: 0;
+            box-sizing: border-box;
         }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        .section {
+            margin-bottom: 20px;
+            background: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h3{
+            font-size: 15px;
+            color: #5f5e5e96; 
+        }
+
+        .contact-info,
+        .skills,
+        .references,
+        .education {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .contact-info li,
+        .skills li,
+        .references li,
+        .education li {
+            margin-bottom: 5px;
+        }
+
+        .profile-picture {
+            text-align: center;
+        }
+
+        .profile-picture img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
         .nav {
             background-color: #333;
             overflow: hidden;
+            margin: 0 0 10px 0;
         }
+
         .nav a {
             float: left;
             display: block;
@@ -31,96 +84,153 @@
             padding: 14px 16px;
             text-decoration: none;
         }
+
         .nav a:hover {
             background-color: #ddd;
             color: black;
         }
+
         main {
-            padding: 20px;
+            display: flex;
             flex: 1;
         }
+
+
         main h1 {
             font-size: 2.5em;
             text-align: center;
         }
+
         main p {
             font-size: 1.2em;
             color: #333;
             text-align: justify;
         }
+
         .image-container {
             text-align: center;
             margin: 20px 0;
         }
+
         .image-container img {
             max-width: 100%;
+            width: 70%;
             height: auto;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline;
         }
-       /* .footer {
-            background-color: #333;
-            padding: 20px;
-            text-align: center;
-            color: white;
-            margin-top: 20px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-        .footer .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-        .footer a {
-            color: white;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        .footer a:hover {
-            color: #ddd;
-        }
-        .footer a img {
-            width: 24px;
-            height: 24px;
-        }*/
 
         .footer {
             background-color: #333;
-            padding: 20px;
+            padding: 10px;
             text-align: center;
             color: white;
-            margin-top: 20px;
             position: relative;
             bottom: 0;
-            width: 100%;
+
         }
+
         .footer .social-links {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 40px;
         }
+
         .footer a {
             color: white;
             text-decoration: none;
             transition: color 0.3s;
-            border-radius: 50%; 
+            border-radius: 50%;
             overflow: hidden;
         }
+
         .footer a:hover {
             color: #ddd;
         }
+
         .footer a img {
-            width: 40px; 
+            width: 40px;
             height: 40px;
             border-radius: 50%;
         }
+
+        
+        
+        #joloras {
+            width: 10vw;
+            height: auto;
+            border-radius: 60%;
+        }
+
+        aside{
+            display: block;
+
+        }
+        article{
+            display: block;
+        }
+        .section-resumo,
+        .section-fd{
+            width: 40vw;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-left: 20%;
+        }
+        
+        
+        /* .section-contacto */
+        .section-perfil,
+        .section-habilidades,
+        .section-referencias{
+            margin-left: 10%;
+            width: 40vw;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .link{
+            text-decoration: none;
+            color: black;
+        }
+        .link:hover{
+            color:rgb(20, 156, 156)
+        }
+
+        .section-perfil,
+        .section-resumo,
+        .section-habilidades,
+        .section-referencias,
+        /* .section-contacto, */
+        .section-fd p{
+            font-size: 0.8em;
+            color: black;
+            font-style: normal;
+            font-weight: 500;
+            text-align: left;
+        }
+        .section-contacto p{
+            font-size: 0.8em;
+            color: black;
+            font-style: normal;
+            font-weight: 500;
+            text-align: left;
+        }
+        .section-contacto{
+            display: block;
+            width: 90vw;
+            margin-left: 3%;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border: 2px inset #333;
+        }
     </style>
-</head>
+    </head>
 
 <body>
-
     <header>
         <nav class="nav">
             <a href="index.html">Home</a>
@@ -130,33 +240,128 @@
         </nav>
     </header>
 
+    <div class="profile-picture">
+        <img id="joloras" src="images/redimentionedlooras.png" alt="Foto de Joelson Lopes">
+    </div>
+    <h1>JOELSON LOPES</h1>
+    <h2>Front-End-Deloper</h2>
+    <br>
+    <hr>
+
+
     <main>
-        <h1>Biografia de Joelson Lopes</h1>
-        <div class="image-container">
-            <img src="images/joloras.jpeg" alt="Imagem de Joelson De Jesus">
-        </div>
-        <p> Aqui você pode adicionar a biografia detalhada de Joelson Lopes. Fale sobre sua história, formação, experiências e qualquer outra informação relevante. </p>
+        <aside>
+            <div class="section-perfil">
+                <h3>PERFIL</h3>
+                <p>
+                    Desenvolvedor de software com sólidas habilidades <br> de resolução de problemas, com experiência <br> comprovada
+                    em criação e projeção de software, <br> bem como o desenvolvimento de páginas web <br> interativas e informativas.
+                    Ao longo do meu <br> percurso, tenho colaborado com diversas equipes <br> multidisciplinares, desde startups,
+                    garantindo a <br> entrega de projetos de alta qualidade dentro dos <br> prazos e orçamentos estipulados.
+                </p>
+            </div>
+            <div class="section-habilidades">
+                <h3>HABILIDADES</h3>
+                <ul class="skills">
+                    <li><strong>Idiomas:</strong> Português, Inglês, Espanhol básico</li>
+                    <li><strong>Linguagem de programação:</strong> JavaScript, HTML/CSS, MySQL, PHP</li>
+                    <li><strong>Frameworks/Sistemas:</strong> Bootstrap, Visual Studio Code</li>
+                </ul>
+            </div>
+            <div class="section-referencias">
+                <h3>REFERÊNCIAS</h3>
+                <ul class="references">
+                    <li>
+                        <strong>Luís Vagner Gonçalves:</strong> Front-End Developer <b>|</b> React.JS <b>|</b> Bootstrap <b>|</b> JavaScript <b>|</b>
+                        HTML/CSS <b>|</b> AWS certified <b>|</b> Cloud Computing Learner at AWS<br>
+                    </li>
+                    <li>
+                        <strong>Reinaldo Felipe Da Costa Pedro:</strong> Computer Network <b>|</b> Information Security <b>|</b> Kali
+                        Linux <b>|</b> RedTeam <b>|</b> Pentester<br>
+                    </li>
+                </ul>
+            </div>
+   
+        </aside>
+
+        <article>
+            <div class="section-resumo">
+                <h3>RESUMO DE CARREIRA</h3>
+                <p>
+                    - Front End Developer <b>|</b> 28 de Maio de 2024;<br>
+                    - Criação da Interface recreativa do website do “Plano Estuda Fácil” da “Africell”
+                    <a class="link" href="https://github.com/joelson-lopes/Plano-Estuda-Facil?tab=readme-ov-file#plano-mais-facil"><b>Plano Estuda Fácil;</b></a><br>
+                    - Projeta e cria soluções para software para solucionar problemas para vários clientes;<br>
+                    - Testa a viabilidade de protótipos de software;<br>
+                    - Modifica códigos para corrigir erros;<br> <br>
+                    Desenvolvedor na empresa Mercadinho;<br>
+                    Mercadinho.ao | Maio 2024 a Setembro de 2024;<br>
+                    - Desenvolveu e implementou soluções para software de acordo com os requisitos dos clientes;<br>
+                    - Testou e aperfeiçoou software antes do lançamento;<br>
+                </p>
+            </div>
+            <div class="section-fd">
+                <h3>FORMAÇÃO EDUCACIONAL</h3>
+                <ul class="education">
+                    <li>
+                        <strong>Formação online no Curso Em Vídeo <a class="link" href="http://www.cursoemvideo.com">(www.cursoemvideo.com)</a></strong><br>
+                        - Cursando desde Fevereiro de 2024 até o momento;<br>
+                        - Faz cursos de especialização em Rede de Computadores para ampliar habilidades;<br>
+                        - Cursa disciplinas em Segurança Cibernética;<br>
+                    </li>
+                    <li>
+                        <strong>-Trainee em Ciência da Computação;</strong><br>
+                        - Cursou em Fev./2023 até os dias de hoje;<br>
+                        - COO da empresa <a class="link" href="https://instagram.com/_mercadinho.ao">Mercadinho</a><br>
+                    </li>
+                </ul>
+            </div>
+        </article>
     </main>
 
-    <footer class="footer">
+    <div class="section-contacto">
+        <h3>CONTATO</h3>
+        <ul class="contact-info">
+            <li><strong>Telefone:</strong><a class="link" href="tel:+244926810795"> (+244) 926-810-795</a></li>
+            <li><strong>E-mail:</strong><a class="link" href="hhtps://google.com/mail.to/ijoelson886@gmail.com" target="_blank" class="text-white"> ijoelson886@gmail.com</a></li>
+            <li><strong>Endereço:</strong> Angola-Icolo & Bengo, Zango-Vida Pacífica, Zona 2-Bloco10-Prédio 1</li>
+            <li><strong>LinkedIn:</strong><a class="link" href="https://www.linkedin.com/in/joelson-de-jesus-040a70309/" target="_blank">@joelson-de-jesus</a></li>
+            <li><strong>GitHub:</strong><a class="link" href="https://github.com/joelson-lopes" target="_blank" > @joelson-lopes</a></li>
+        </ul>
+    </div>
+
+    <!-- <footer class="footer">
         <div class="social-links">
+            <a  href="hhtps://google.com/mail.to/ijoelson886@gmail.com" target="_blank" class="text-white">
+                <img src="images/gmaillogo.png" alt="Gmail">
+            </a>
+            <a href="https://wa.link/gvh02t" target="_blank">
+                <img src="images/whatsapplogo.png" alt="WhatsApp">
+            </a>
             <a href="https://www.instagram.com/_yfckwn_/" target="_blank">
                 <img src="images/logo-instagram.jpg" alt="Instagram">
             </a>
-
             <a href="https://www.linkedin.com/in/joelson-de-jesus-040a70309/" target="_blank">
                 <img src="images/R.png" alt="LinkedIn">
             </a>
-
             <a href="https://github.com/joelson-lopes" target="_blank">
                 <img src="images/logo-github.jpg" alt="GitHub">
             </a>
-
             <a href="https://x.com/_yfckwn_" target="_blank">
                 <img src="images/logo-twitter.jpg" alt="Twitter">
             </a>
+            <a href="https://www.facebook.com/profile.php?id=61553688145403&locale=pt_BR" target="_blank">
+                <img src="images/facebooklogo.png" alt="Facebook">
+            </a>
+            <a href="https://x.com/_yfckwn_" target="_blank">
+                <img src="images/telegramlogo.png" alt="Telegram">
+            </a>
+            </a>
+            <a href="https://discord.com/channels/@joelsondejesus" target="_blank">
+                <img src="images/discordlogo.png" alt="Discord">
+            </a>
         </div>
-    </footer>
+    </footer> -->
 </body>
 
 </html>
