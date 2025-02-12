@@ -176,4 +176,8 @@ strong:hover {
     .card-content {
         padding: 10px;
     }
+
+    footer{
+        display: none;
+    }
 }

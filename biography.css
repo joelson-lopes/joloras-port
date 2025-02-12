@@ -1,0 +1,260 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.section {
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    font-size: 15px;
+    color: #5f5e5e96;
+}
+
+.contact-info,
+.skills,
+.references,
+.education {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info li,
+.skills li,
+.references li,
+.education li {
+    margin-bottom: 5px;
+}
+
+.profile-picture {
+    text-align: center;
+}
+
+.profile-picture img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.nav {
+    background-color: #333;
+    overflow: hidden;
+    margin: 0 0 10px 0;
+}
+
+.nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+main {
+    display: flex;
+    flex: 1;
+}
+
+
+main h1 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+main p {
+    font-size: 1.2em;
+    color: #333;
+    text-align: justify;
+}
+
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-container img {
+    max-width: 100%;
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline;
+}
+
+.footer {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    position: relative;
+    bottom: 0;
+
+}
+
+.footer .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.footer a:hover {
+    color: #ddd;
+}
+
+.footer a img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#h3 {
+    text-align: center;
+}
+
+#joloras {
+    width: 10vw;
+    height: auto;
+    border-radius: 60%;
+}
+
+aside {
+    display: block;
+
+}
+
+article {
+    display: block;
+}
+
+.section-resumo,
+.section-fd {
+    width: 40vw;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-left: 20%;
+}
+
+
+.section-perfil,
+.section-habilidades,
+.section-referencias {
+    margin-left: 10%;
+    width: 40vw;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover {
+    color: rgb(20, 156, 156)
+}
+
+.section-perfil,
+.section-resumo,
+.section-habilidades,
+.section-referencias,
+/* .section-contacto, */
+.section-fd p {
+    font-size: 0.8em;
+    color: black;
+    font-style: normal;
+    font-weight: 500;
+    text-align: left;
+}
+
+.section-contacto p {
+    font-size: 0.8em;
+    color: black;
+    font-style: normal;
+    font-weight: 500;
+    text-align: left;
+}
+
+.section-contacto {
+    display: block;
+    width: 90vw;
+    margin-left: 3%;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border: 2px inset #333;
+}
+
+
+
+@media (max-width: 768px) {
+    .nav a {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .profile-picture img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .section {
+        width: 85%;
+        margin: 10px auto;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-resumo,
+    .section-fd,
+    .section-perfil,
+    .section-habilidades,
+    .section-referencias {
+        width: 85%;
+        margin-left: 3%;
+    }
+
+    .section-contacto {
+        width: 85%;
+    }
+}
