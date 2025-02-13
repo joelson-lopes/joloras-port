@@ -169,6 +169,9 @@ strong:hover {
         padding: 10px;
         flex-grow: 0;
     }
+    main{
+        margin-left: 3%;
+    }
     .card {
         width: 100%;
         max-width: none;
@@ -180,4 +183,5 @@ strong:hover {
     footer{
         display: none;
     }
+
 }

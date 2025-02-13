@@ -228,6 +228,7 @@ article {
         float: none;
         width: 100%;
         text-align: center;
+        flex-direction: column;
     }
 
     .profile-picture img {
@@ -251,7 +252,7 @@ article {
     .section-habilidades,
     .section-referencias {
         width: 85%;
-        margin-left: 3%;
+        margin-left: 2.5%;
     }
 
     .section-contacto {

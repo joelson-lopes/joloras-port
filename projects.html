@@ -135,6 +135,31 @@
         #download {
             cursor: pointer;
         }
+
+        @media (max-width: 768px) {
+            .nav {
+                flex-direction: column;
+            }
+            .nav a {
+                padding: 10px;
+                flex-grow: 0;
+            }
+            main{
+                margin-left: 3%;
+            }
+            .card {
+                width: 100%;
+                max-width: none;
+            }
+            .card-content {
+                padding: 10px;
+            }
+        
+            footer{
+                display: none;
+            }
+        
+        }
     </style>
 </head>
 <body>
