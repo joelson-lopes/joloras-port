@@ -170,6 +170,7 @@ strong:hover {
         flex-grow: 0;
     }
     main{
+        width: 100%;
         margin-left: 5%;
     }
     .card {
