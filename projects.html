@@ -61,6 +61,7 @@
             width: 300px;
             transition: transform 0.3s, box-shadow 0.3s;
             color: #333;
+            margin-bottom: 40px;
         }
         .card:hover {
             transform: translateY(-10px);
@@ -108,7 +109,7 @@
         .footer .social-links {
             display: flex;
             justify-content: center;
-            gap: 40px; 
+            gap: 30px; 
         }
         .footer a {
             color: white;
@@ -136,16 +137,31 @@
             cursor: pointer;
         }
 
-        @media (max-width: 768px) {
-            .nav {
+        #leftArrow{
+            border: none;
+            color: white;
+            display: inline;
+            text-decoration: none;
+            font-size: 1em;
+            font-weight: 600;
+            padding: 5px;
+            border-radius: 2px;
+            margin-left: 48%;
+            background-color: #4CAF50;
+        }
+
+
+        @media screen and (max-width: 768px) {
+            /* .nav {
                 flex-direction: column;
             }
             .nav a {
                 padding: 10px;
                 flex-grow: 0;
-            }
+            } 
             main{
                 margin-left: 3%;
+                flex-direction: column;
             }
             .card {
                 width: 100%;
@@ -155,6 +171,13 @@
                 padding: 10px;
             }
         
+            footer{
+                display: none;
+            } */
+
+            .nav{
+                flex-direction: column;
+            }
             footer{
                 display: none;
             }
@@ -200,7 +223,7 @@
                     <a href="../mercadinho.ao/mercadiinho.html">Ver projecto</a>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" style="margin-bottom: 30px;">
                 <img src="../Plano-Mais-Facil/images/logo.png" alt="logo africell">
                 <div class="card-content">
                     <h2>Plano Estuda Fácil</h2> <hr>
@@ -209,6 +232,7 @@
                 </div>
             </div>
         </div>
+        <a href="index.html" id="leftArrow">↩</a> 
     </main>
     <footer class="footer">
         <div class="social-links">
