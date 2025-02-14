@@ -165,12 +165,12 @@ strong:hover {
     .nav {
         flex-direction: column;
     }
-    /* .nav a {
+     .nav a { 
         padding: 10px;
         flex-grow: 0;
     }
     main{
-        margin-left: 4%;
+        margin-left: 5%;
     }
     .card {
         width: 100%;
