@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +19,8 @@
             flex-direction: column;
             min-height: 100vh;
         }
-        .nav {
+
+        /* .nav {
             background-color: #333;
             overflow: hidden;
         }
@@ -33,30 +35,58 @@
         .nav a:hover {
             background-color: #ddd;
             color: black;
+        } */
+
+        .nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            padding: 14px 0;
         }
+
+        .nav a {
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            flex-grow: 1;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .nav a:hover {
+            background-color: #555;
+            color: #fff;
+            transform: scale(1.1);
+        }
+
         main {
             padding: 20px;
             flex: 1;
         }
+
         main h1 {
             font-size: 2.5em;
             text-align: center;
         }
+
         main p {
             font-size: 1.2em;
             color: #333;
             text-align: justify;
         }
+
         .image-container {
             text-align: center;
             margin: 20px 0;
         }
+
         .image-container img {
             max-width: 100%;
             height: auto;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
         .footer {
             background-color: #333;
             padding: 20px;
@@ -67,37 +97,43 @@
             bottom: 0;
             width: 100%;
         }
+
         .footer .social-links {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 30px;
         }
+
         .footer a {
             color: white;
             text-decoration: none;
             transition: color 0.3s;
-            border-radius: 50%; 
+            border-radius: 50%;
             overflow: hidden;
         }
+
         .footer a:hover {
             color: #ddd;
         }
+
         .footer a img {
-            width: 40px; 
+            width: 40px;
             height: 40px;
             border-radius: 50%;
         }
 
         @media (max-width:768px) {
-            .nav{
+            .nav {
                 flex-direction: column;
             }
-            .footer{
+
+            .footer {
                 display: none;
             }
         }
     </style>
 </head>
+
 <body>
     <header>
         <nav class="nav">
@@ -112,11 +148,12 @@
         <div class="image-container">
             <img src="images/objetivos.jpg" alt="Imagem relacionada aos objetivos de Joelson Lopes">
         </div>
-        <p> Liste seus objetivos aqui. Detalhe suas metas de curto, médio e longo prazo, tanto profissionais quanto pessoais. </p>
+        <p> Liste seus objetivos aqui. Detalhe suas metas de curto, médio e longo prazo, tanto profissionais quanto
+            pessoais. </p>
     </main>
     <footer class="footer">
         <div class="social-links">
-            <a href="https://www.instagram.com/_yfckwn_/" target="_blank">
+            <!-- <a href="https://www.instagram.com/_yfckwn_/" target="_blank">
                 <img src="images/logo-instagram.jpg" alt="Instagram">
             </a>
 
@@ -130,8 +167,36 @@
 
             <a href="https://x.com/_yfckwn_" target="_blank">
                 <img src="images/logo-twitter.jpg" alt="Twitter">
+            </a> -->
+
+            <a href="hhtps://google.com/mail.to/ijoelson886@gmail.com" target="_blank" class="text-white">
+                <img src="images/gmaillogo.png" alt="Gmail">
             </a>
+            <a href="https://www.instagram.com/_yfckwn_/" target="_blank">
+                <img src="images/logo-instagram.jpg" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/joelson-de-jesus-040a70309/" target="_blank">
+                <img src="images/R.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/joelson-lopes" target="_blank">
+                <img src="images/logo-github.jpg" alt="GitHub">
+            </a>
+            <a href="https://x.com/_yfckwn_" target="_blank">
+                <img src="images/logo-twitter.jpg" alt="Twitter">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61553688145403&locale=pt_BR" target="_blank">
+                <img src="images/facebooklogo.png" alt="Facebook">
+            </a>
+            <a href="https://x.com/_yfckwn_" target="_blank">
+                <img src="images/telegramlogo.png" alt="Telegram">
+            </a>
+            </a>
+            <a href="https://discord.com/channels/@joelsondejesus" target="_blank">
+                <img src="images/discordlogo.png" alt="Discord">
+            </a>
+
         </div>
     </footer>
 </body>
+
 </html>

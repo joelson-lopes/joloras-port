@@ -19,7 +19,8 @@
             flex-direction: column;
             min-height: 100vh;
         }
-        .nav {
+
+        /* .nav {
             background-color: #333;
             overflow: hidden;
         }
@@ -34,7 +35,30 @@
         .nav a:hover {
             background-color: #ddd;
             color: black;
+        } */
+
+        .nav {
+            background-color: rgba(0, 0, 0, 0.7); 
+            display: flex;
+            justify-content: center;
+            padding: 14px 0;
         }
+          
+        
+        .nav a {
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            flex-grow: 1;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .nav a:hover {
+            background-color: #555;
+            color: #fff;
+            transform: scale(1.1);
+        }
+        
         main {
             padding: 20px;
             flex: 1;
@@ -108,7 +132,7 @@
         .footer .social-links {
             display: flex;
             justify-content: center;
-            gap: 40px; 
+            gap: 30px; 
         }
         .footer a {
             color: white;
@@ -170,35 +194,35 @@
                     <a href="files/certificate(1).pdf" download="certificate(1).pdf" id="download">Download</a>
                 </div>
             </div>
-            <div class="card">
+            <!-- <div class="card">
                 <img src="images/react.png" alt="React Js">
                 <div class="card-content">
                     <h2>Certificação React</h2>
                     <p>Certificação em desenvolvimento de aplicações com React.</p>
                     <a href="#">Veja Mais</a>
                 </div>
-            </div>
-            <div class="card">
+            </div> -->
+            <!-- <div class="card">
                 <img src="images/angular.png" alt="angular">
                 <div class="card-content">
                     <h2>Certificação Angular</h2>
                     <p>Certificação em desenvolvimento de aplicações com Angular.</p>
                     <a href="#">Veja Mais</a>
                 </div>
-            </div>
-            <div class="card">
+            </div> -->
+            <!-- <div class="card">
                 <img src="images/nodejs.png" alt="Node Js">
                 <div class="card-content">
                     <h2>Certificação Node.js</h2>
                     <p>Certificação em desenvolvimento de aplicações backend com Node.js.</p>
                     <a href="#">Veja Mais</a>
                 </div>
-            </div>
+            </div> -->
         </div>
     </main>
     <footer class="footer">
         <div class="social-links">
-            <a href="hhtps://google.com/mail.to/ijoelson886@gmail.com" target="_blank" class="text-white">
+            <!-- <a href="hhtps://google.com/mail.to/ijoelson886@gmail.com" target="_blank" class="text-white">
                 <img src="images/gmaillogo.png" alt="Gmail">
             </a>
             <a href="https://www.instagram.com/_yfckwn_/" target="_blank">
@@ -215,7 +239,34 @@
             </a>
             <a href="https://discord.com/channels/@joelsondejesus" target="_blank">
                 <img src="images/discordlogo.png" alt="Discord">
+            </a> -->
+
+            <a href="hhtps://google.com/mail.to/ijoelson886@gmail.com" target="_blank" class="text-white">
+                <img src="images/gmaillogo.png" alt="Gmail">
             </a>
+            <a href="https://www.instagram.com/_yfckwn_/" target="_blank">
+                <img src="images/logo-instagram.jpg" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/joelson-de-jesus-040a70309/" target="_blank">
+                <img src="images/R.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/joelson-lopes" target="_blank">
+                <img src="images/logo-github.jpg" alt="GitHub">
+            </a>
+            <a href="https://x.com/_yfckwn_" target="_blank">
+                <img src="images/logo-twitter.jpg" alt="Twitter">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61553688145403&locale=pt_BR" target="_blank">
+                <img src="images/facebooklogo.png" alt="Facebook">
+            </a>
+            <a href="https://x.com/_yfckwn_" target="_blank">
+                <img src="images/telegramlogo.png" alt="Telegram">
+            </a>
+            </a>
+            <a href="https://discord.com/channels/@joelsondejesus" target="_blank">
+                <img src="images/discordlogo.png" alt="Discord">
+            </a>
+
         </div>
     </footer>
 </body>

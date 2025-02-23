@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -57,14 +58,6 @@ h3 {
     height: 150px;
 }
 
-.nav {
-    background-color: rgba(0, 0, 0, 0.7); 
-    display: flex;
-    justify-content: center;
-    padding: 14px 0;
-}
-
-
 /* .nav a {
     float: left;
     display: block;
@@ -73,6 +66,14 @@ h3 {
     padding: 14px 16px;
     text-decoration: none;
 } */
+ 
+.nav {
+    background-color: rgba(0, 0, 0, 0.7); 
+    display: flex;
+    justify-content: center;
+    padding: 14px 0;
+    margin-bottom: 20px;
+}
 
 .nav a {
     color: white;
@@ -112,7 +113,7 @@ main p {
 
 .image-container img {
     max-width: 100%;
-    width: 70%;
+    width: 90%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -132,7 +133,7 @@ main p {
 .footer .social-links {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 30px;
 }
 
 .footer a {
@@ -236,7 +237,6 @@ article {
 
 @media (max-width: 800px) {
     .nav a {
-        float: none;
         width: 100%;
         text-align: center;
         flex-direction: column;
