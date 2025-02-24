@@ -235,9 +235,9 @@ article {
 
 
 
-@media (max-width: 800px) {
+/* @media (max-width: 768px) {
     .nav a {
-        width: 100%;
+        width: auto;
         text-align: center;
         flex-direction: column;
     }
@@ -257,17 +257,109 @@ article {
         align-items: center;
     }
 
-    .section-resumo,
-    .section-fd,
-    .section-perfil,
-    .section-habilidades,
-    .section-referencias {
-        width: 85%;
-        height: auto;        margin-left: 2.5%;
-    }
-
+    
     .section-contacto {
         width: 85%;
         height: auto;
-    }
-}
+        }
+        } */
+        
+        @media (max-width: 768px) {
+            ::webkit-scrollbar{
+                padding: 0;
+                margin: 0;
+            }
+            
+            body{
+                display: flex;
+                flex-direction: column;
+
+            }
+            .section-resumo,
+            .section-fd,
+            .section-perfil,
+            .section-habilidades,
+            .section-referencias {
+                width: 90%;
+                height: auto;    
+                padding: 10px;    
+            }
+
+            .section-resumo,
+            .section-fd,
+            .section-perfil,
+            .section-habilidades,
+            .section-referencias {
+            font-size: 0.8em;
+            text-align: center;
+            letter-spacing: normal;
+            }
+
+            .profile-picture img {
+                width: 100px;
+                height: 100px;
+            }
+        
+            .section {
+                width: auto;
+                margin: auto;
+            }
+        
+            /* main {
+                width: auto;
+                flex-direction: column;
+                align-items: center;
+            }
+             */
+            .section-contacto {
+                width: 80%;
+                height: auto;
+
+            font-size: 0.8em;
+            text-align: center;
+            letter-spacing: normal;
+            }
+
+            .nav {
+                width: auto;
+                flex-direction: column;
+                width: auto;
+            }
+
+            .nav a { 
+                padding: 10px;
+                flex-grow: 0;
+            }
+
+            main{
+                width: auto;
+                /* padding: 30px; */
+                flex-direction: column;
+            }
+            aside{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 80%;
+                margin-left: 5%;
+            }
+            article{
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+                margin-left: 1%;
+            }
+
+            .card {
+                max-width: auto;
+            }
+
+            /* .card-content {
+                padding: 10px;
+            }  */
+
+            footer{
+                display: none;
+            }
+
+        }

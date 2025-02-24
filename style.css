@@ -57,8 +57,8 @@ main {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 80%; 
-    max-width: 600px;
+    width: auto; 
+    /* max-width: 600px; */
     transition: transform 0.3s, box-shadow 0.3s;
     color: #333; 
     margin: 0 20px 20px 0; 
@@ -76,7 +76,7 @@ main {
 }
 
 .card-content {
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -166,9 +166,11 @@ strong:hover {
         padding: 0;
         margin: 0;
     }
+    
+
     .nav {
         flex-direction: column;
-        width: 100.7%;
+        width: auto;
         max-width: none;
     }
      .nav a { 
@@ -176,7 +178,9 @@ strong:hover {
         flex-grow: 0;
     }
     main{
-        width: 90%;
+        background: none;
+        background-color: #7a7676;
+        width: auto;
     }
     .card {
     
