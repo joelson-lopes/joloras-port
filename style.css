@@ -39,6 +39,7 @@ body {
     display: flex;
     justify-content: center;
     padding: 14px 0;
+    padding: 10px;
 }
 
 .nav a {
