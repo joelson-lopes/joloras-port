@@ -70,8 +70,7 @@ h3 {
     display: block;
     text-align: center;
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.466); 
-    /* width: 100vw; */
+    background-color: rgba(0, 0, 0, 0.842); 
     padding: 10px;
 }
 #span:hover{

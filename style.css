@@ -193,6 +193,10 @@ strong:hover {
         margin: 0;
     }
     
+    body{
+        background: linear-gradient( to left, #45a049, #555);
+    }
+
     .nav {
         display: none;
         flex-direction: column;
@@ -209,7 +213,7 @@ strong:hover {
         width: auto;
     }
     .card {
-    
+        text-align: center;
         max-width: max-content;
     }
     .card-content {
