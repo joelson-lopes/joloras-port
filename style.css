@@ -205,7 +205,7 @@ strong:hover {
         flex-grow: 0;
     }
     main{
-        background: none;
+        /* background: none; */
         width: auto;
     }
     .card {
