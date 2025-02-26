@@ -9,62 +9,42 @@
     <meta name="keywords" content="biografia, Joelson Lopes">
     <meta name="author" content="Joelson Lopes">
     <title>Biografia-Joelson Lopes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" rel="stylesheet" />
     <link rel="stylesheet" href="biography.css">
-    <!-- <style>
+    <style>
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background: #f4f4f4;
-    padding: 0;
-    box-sizing: border-box;
-}
+        @media (min-width:768px) {
+            
+            #span{
+                display: none; 
+            }
+            #span:hover{
+                background-color: white;
+                color: black;
+            }
+            .nav{
+                display: flex;
+            }
+        }
 
-@media (max-width: 768px) {
-    .nav a {
-        float: none;
-        width: 100%;
-        text-align: center;
-    }
-
-    .profile-picture img {
-        width: 100px;
-        height: 100px;
-    }
-
-    .section {
-        width: 90%;
-        margin: auto;
-    }
-
-    main {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .section-resumo,
-    .section-fd,
-    .section-perfil,
-    .section-habilidades,
-    .section-referencias {
-        width: 90%;
-        margin-left: 3%;
-    }
-
-    .section-contacto {
-        width: 85%;
-    }
-}
-
-    </style> -->
+        @media (min-width:1320px) {
+            #span{
+                display: none;
+            }
+            .nav{
+                display: flex;
+            }
+        }
+    </style> 
 
 </head>
 
 <body>
     <header>
-        <nav class="nav">
+        <span id="span" class="material-symbols-outlined" onclick="clickSpan()">menu</span>
+        <nav id="nav" class="nav">
             <a href="index.html">Home</a>
-            <a href="biography.html">Biography</a>
+            <!-- <a href="biography.html">Biography</a> -->
             <a href="certifications.html">Certifications</a>
             <a href="goals.html">Goals</a>
         </nav>
@@ -155,8 +135,9 @@ body {
                 </ul>
             </div>
         </article>
-    </main>
 
+    </main>
+    
     <div class="section-contacto">
         <h3 id="h3">CONTATO</h3>
         <ul class="contact-info">
@@ -170,8 +151,11 @@ body {
                     @joelson-lopes</a></li>
         </ul>
     </div>
+    
+    <a href="index.html" id="leftArrow">↩</a> 
 
-     <footer class="footer">
+    <br> <br>
+    <footer class="footer">
         <div class="social-links">
            <!-- <a  href="hhtps://google.com/mail.to/ijoelson886@gmail.com" target="_blank" class="text-white">
                 <img src="images/gmaillogo.png" alt="Gmail">
@@ -230,6 +214,16 @@ body {
 
         </div>
     </footer> 
+
+    <script>
+        function clickSpan() {
+            if (nav.style.display == 'flex') {
+                nav.style.display = 'none'
+            } else {
+                nav.style.display = 'flex'
+            }
+        }
+    </script>
 </body>
 
 </html>

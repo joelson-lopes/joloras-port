@@ -9,14 +9,39 @@
     <meta name="description" content="Portfólio de Joelson Lopes">
     <meta name="keywords" content="portfólio, Joelson Lopes, web design, desenvolvimento">
     <meta name="author" content="Joelson Lopes">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" rel="stylesheet" />
     <title>JOLORAS PORTFÓLIO</title>
+    <style>
+        @media (min-width:768px) {
+            
+            #span{
+                display: none; 
+            }
+            #span:hover{
+                background-color: white;
+                color: black;
+            }
+            .nav{
+                display: flex;
+            }
+        }
 
+        @media (min-width:1320px) {
+            #span{
+                display: none;
+            }
+            .nav{
+                display: flex;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <nav class="nav">
-            <a href="index.html">Home</a>
+        <span id="span" class="material-symbols-outlined" onclick="clickSpan()">menu</span>
+        <nav id="nav" class="nav">
+            <!-- <a href="index.html">Home</a> -->
             <a href="biography.html">Biography</a>
             <a href="certifications.html">Certifications</a>
             <a href="goals.html">Goals</a>
@@ -114,6 +139,17 @@
             </a>
         </div>
     </footer>
-</body>
 
+    <script>
+        function clickSpan() {
+            if (nav.style.display == 'flex') {
+                nav.style.display = 'none'
+            } else {
+                nav.style.display = 'flex'
+            }
+        }
+    </script>
+</body>
 </html>
+
+

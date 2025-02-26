@@ -3,7 +3,6 @@
     margin: 0;
 }
 
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -12,6 +11,27 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+
+#span{
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.842); 
+    /* width: 100vw; */
+    padding: 10px;
+}
+#span:hover{
+    
+    color: black;
+    background-color: white; 
+}
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
 }
 
 .nav {
@@ -173,8 +193,8 @@ strong:hover {
         margin: 0;
     }
     
-
     .nav {
+        display: none;
         flex-direction: column;
         width: auto;
         max-width: none;
