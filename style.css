@@ -18,14 +18,14 @@ body {
     text-align: center;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.842); 
-    /* width: 100vw; */
     padding: 20px;
 }
+
 #span:hover{
-    
+    background-color: rgba(78, 77, 77, 0.911);
     color: black;
-    background-color: white; 
 }
+
 .material-symbols-outlined {
     font-variation-settings:
     'FILL' 0,
@@ -193,10 +193,6 @@ strong:hover {
         margin: 0;
     }
     
-    body{
-        background: linear-gradient( to left, #45a049, #555);
-    }
-
     .nav {
         display: none;
         flex-direction: column;
@@ -209,7 +205,6 @@ strong:hover {
     }
     main{
         background: none;
-        background-color: #7a7676;
         width: auto;
     }
     .card {
