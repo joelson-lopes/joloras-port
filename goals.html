@@ -9,7 +9,9 @@
     <meta name="keywords" content="objetivos, Joelson Lopes">
     <meta name="author" content="Joelson Lopes">
     <title>Objetivos - Joelson Lopes</title>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu"
+        rel="stylesheet" />
 
     <style>
         ::webkit-scrollbar {
@@ -27,25 +29,27 @@
             min-height: 100vh;
         }
 
-        #span{
+        #span {
             display: block;
             text-align: center;
             cursor: pointer;
-            background-color: rgba(0, 0, 0, 0.466); 
+            background-color: rgba(0, 0, 0, 0.466);
             padding: 20px;
         }
-        #span:hover{
-    
+
+        #span:hover {
+
             color: rgba(0, 0, 0, 0.692);
-            background-color: rgba(15, 15, 15, 0.589); 
+            background-color: rgba(15, 15, 15, 0.589);
         }
+
         .material-symbols-outlined {
             color: white;
             font-variation-settings:
-            'FILL' 0,
-            'wght' 400,
-            'GRAD' 0,
-            'opsz' 24
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
         }
 
         .nav {
@@ -53,6 +57,7 @@
             display: flex;
             justify-content: center;
             padding: 14px 0;
+            width:100vw;
         }
 
         .nav a {
@@ -67,12 +72,14 @@
         .nav a:hover {
             background-color: #555;
             color: #fff;
-            transform: scale(1.1);
+            /*transform: scale(1.1);*/
         }
 
         main {
             padding: 20px;
             flex: 1;
+            width: 90vw;
+
         }
 
         main h1 {
@@ -106,7 +113,7 @@
             margin-top: 20px;
             position: relative;
             bottom: 0;
-            width: 100%;
+            width: 97vw;
         }
 
         .footer .social-links {
@@ -133,7 +140,7 @@
             border-radius: 50%;
         }
 
-        #leftArrow{
+        #leftArrow {
             border: none;
             color: black;
             display: block;
@@ -152,35 +159,39 @@
                 padding: 0;
                 margin: 0;
             }
-
+            main{
+                padding: 20px;
+            }
             .nav {
                 flex-direction: column;
             }
-
             .footer {
                 display: none;
             }
         }
 
         @media (min-width:768px) {
-            
-            #span{
-                display: none; 
+
+            #span {
+                display: none;
             }
-            #span:hover{
+
+            #span:hover {
                 background-color: white;
                 color: black;
             }
-            .nav{
+
+            .nav {
                 display: flex;
             }
         }
-        
+
         @media (min-width:1320px) {
-            #span{
+            #span {
                 display: none;
             }
-            .nav{
+
+            .nav {
                 display: flex;
             }
         }
@@ -191,7 +202,7 @@
     <header>
         <span id="span" class="material-symbols-outlined" onclick="clickSpan()">menu</span>
         <nav id="nav" class="nav">
-            <a href="index.html">Home</a>
+            <!-- <a href="index.html">Home</a> -->
             <a href="biography.html">Biography</a>
             <a href="certifications.html">Certifications</a>
             <!-- <a href="goals.html">Goals</a> -->
@@ -200,10 +211,16 @@
     <main>
         <h1>Objetivos de Joelson Lopes</h1>
         <div class="image-container">
-            <img src="images/objetivos.jpg" alt="Imagem relacionada aos objetivos de Joelson Lopes">
+            <img src="images/objetivos.jpg" alt="Imagem relacionada aos meus objetivos(Joelson Lopes)">
         </div>
-        <p> Liste seus objetivos aqui. Detalhe suas metas de curto, médio e longo prazo, tanto profissionais quanto
-            pessoais. </p>
+        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum dolor repudiandae modi sint non consectetur
+            sequi qui deleniti nisi, asperiores veniam itaque repellendus ullam unde! Maiores laborum commodi adipisci,
+            velit vitae labore nostrum harum incidunt laudantium id consequatur aliquid, repudiandae fugit dolor ex
+            maxime ea saepe praesentium. Incidunt laboriosam nemo, quos nostrum quas veniam beatae iusto dolorum
+            corrupti hic. Quo quisquam doloremque dicta sint culpa corporis. Cumque voluptate sunt harum sit nemo
+            consectetur tenetur natus magni ipsum voluptatem! Sit similique sequi natus expedita, illo ab? Rerum fugiat
+            harum accusantium quasi labore eos eaque voluptatum! Enim voluptatibus consectetur explicabo. Nesciunt,
+            enim.</p>
 
         <a href="index.html" id="leftArrow">↩</a>
     </main>

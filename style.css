@@ -55,6 +55,7 @@ body {
     background-color: #555;
     color: #fff;
     transform: scale(1.1);
+    border-radius: 10px;
 }
 
 main {
@@ -188,36 +189,3 @@ strong:hover {
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
-    ::webkit-scrollbar{
-        padding: 0;
-        margin: 0;
-    }
-    
-    .nav {
-        display: none;
-        flex-direction: column;
-        width: auto;
-        max-width: none;
-    }
-     .nav a { 
-        padding: 10px;
-        flex-grow: 0;
-    }
-    main{
-        /* background: none; */
-        width: auto;
-    }
-    .card {
-        text-align: center;
-        max-width: max-content;
-    }
-    .card-content {
-        padding: 10px;
-    } 
-
-    footer{
-        display: none;
-    }
-
-}
